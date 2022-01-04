@@ -1,0 +1,139 @@
+html{
+    font-size: 100%;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* colors*/
+:root{
+    --backGround_top : #7d8b96;
+    --backGround_button: #8e9ca6;
+    --font: #ffffff;
+}
+
+/*other style*/
+div#main{
+    height: 100vh;
+    background: linear-gradient(#778997,#98a2aa);
+    font-family: 'vazir-light';
+}
+
+/*title style*/
+
+header h1#title{
+    color: #ffffff;
+    font-size: 2.3rem;
+    width: fit-content;
+    margin: 3rem auto;
+}
+
+/*inputs*/
+#inputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    transition: all 0.3s ease-in-out;
+}
+#addTask-form{
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+#addTask_inputs{
+    margin-right: 1.5rem;
+}
+div#addTask_inputs form input{
+    width: 15rem;
+    height: 2.5rem;
+    border-radius: 4px;
+    border: none;
+}
+.input_style:focus{
+    outline: none;
+    background-color: #ffffff;
+    font-family: 'vazir-light';
+    font-size: 0.8rem;
+}
+select#filter-list{
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+} 
+
+
+/*task content0*/
+#tasks{
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease-in-out;
+}
+.task{
+    display: flex   ;
+    justify-content: space-between;
+    background-color: rgb(219, 219, 219);
+    margin-top: 0.3rem;
+    padding: 0.6rem;
+    border-radius: 4px;
+    width: 17.5rem;
+    margin-right: 8.5rem;
+    font-family: 'vazir-bold';
+}
+
+/*hover task*/
+.task:hover{
+    background-color: rgb(206, 206, 206);
+}
+.task:hover #task_btns button.hover{
+    background-color:  rgb(206, 206, 206);
+
+}
+
+/*buttons*/
+#addTask_btn{
+    border-radius: 5rem;
+    background-color: #ffffff;
+    outline: none;
+    border: 0 ;
+}
+.bi-plus-circle-fill{
+    width: 30px;
+    height: 30px;
+    margin-top: 0.2rem;
+   color: rgb(104, 104, 104); 
+}
+.bi-plus-circle-fill:hover{
+    color: rgb(128, 173, 233);
+    transition: all 0.4s ease-in-out;
+}
+ 
+
+#task_do{
+    border: 0;
+    background-color: rgb(219, 219, 219);
+}
+.fa-check-circle:hover{
+    color: rgb(23, 167, 35);
+    transition: all 0.2s ease-in-out;
+    font-size: 1rem;
+}
+
+#task_remove{
+    border: 0;
+    background-color: rgb(219, 219, 219);
+}
+.fa-trash-alt:hover{
+    color: rgb(240, 36, 36);
+    transition: all 0.2s ease-in-out;
+    font-size: 1rem;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.4    ;
+}
